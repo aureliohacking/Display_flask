@@ -1,0 +1,86 @@
+body {
+    background-color: #333649;
+    margin: 0px;
+    padding: 0px;
+}
+
+.headLines {
+    border: solid 1px rgba(0,0,0,0.0);
+    height: 200px;
+    /* background-color: #aaa; */
+    /* opacity: 0.5; */
+}
+
+h1 {
+    color: #DDDFEA;
+    text-align: center;
+    /* text-shadow: -10px -20px 2px rgba(0,0,0,1); */
+    line-height: 1.7; 
+    letter-spacing: 3px;
+    font-size: 70px;
+}
+
+.grid-container {
+	display: grid;
+    grid-template-rows: 400px;
+	grid-template-columns: 50% 48%;
+    gap: 10px;
+}
+
+.box-1 {
+    border: solid 1px rgba(0,0,0,0.0);
+    border-radius: 20px;
+    /* background-color: yellow; */
+}
+
+/*estilo de imagenes*/
+.icon-pos{
+    /* background-color: #0090ff; */ 
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    top: 108px;
+    left: 219px;
+}
+
+.box-2 {
+    border: solid 1px rgba(0,0,0,0.0);
+    border-radius: 20px;
+    background-color: #302d41;
+}
+
+/*estilo de imagenes caja 2*/
+.icon-pos2{
+    /* background-color: #0090ff; */ 
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    top: 60px;
+    left: 219px;
+}
+
+/*aqui va lo estilo de lo botone*/
+.Boton1 {
+    background-color: #9c7fb0;
+    border: 0px;
+    border-radius: 12px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.2s;
+    width: 130px;
+    height: 50px;
+    top: 59px;
+    left: 90px;
+}
+
+.Boton1:hover {
+    background: #a945d7;
+    box-shadow: 0 0 10px #a945d7;
+}

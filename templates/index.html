@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Arduino</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="../static/CSS/main.css" type="text/css" /> 
+        <script src="{{url_for('static', filename='/js/index.js')}}"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type=text/javascript>
+                $(function() {
+                  $('a#test').bind('click', function() {
+                    $.getJSON('/boton1',
+                        function(data) {
+                      //do nothing
+                    });
+                    return false;
+                  });
+                });
+                $(function() {
+                  $('a#test1').bind('click', function() {
+                    $.getJSON('/boton2',
+                        function(data) {
+                      //do nothing
+                    });
+                    return false;
+                  });
+                });
+        </script>
+    </head>
+    
+    <body>
+
+        <div class = "headLines">
+            <h1>simulador de secuencia</h1>
+        </div>
+        
+        <div class = "grid-container">
+            <div class = "box-1">
+                <a href=# id=test><button type="button" class="Boton1" id="btn1"> Siguiente </button></a>
+                <a href=# id=test1><button type="button" class="Boton1" id="btn2"> Atras </button></a>
+                <a href=# id=test2><button type="button" class="Boton1" id="btn3"> Quit </button></a>
+                <a href=# id=test3><button type="button" class="Boton1" id="btn4"> About </button></a>
+                <br>
+                <div class = "icon-pos">
+                    <img id = "img1" src = "../static/src/icon/d.png" />
+                </div>
+            </div>
+            <div class = "box-2">
+                <div class = "icon-pos2">
+                    <img id = "img2" src = "../static/src/icon/0.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
